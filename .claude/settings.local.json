@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh ubuntu@213.155.21.111 \"cat /home/ubuntu/kaspi-saas/backend/api/orders.py | grep -n ''sync-kaspi\\\\|sync_orders''\")",
+      "Bash(sshpass -p 'tij7apjwy$bwmdTwgrwg' ssh -o StrictHostKeyChecking=no ubuntu@213.155.21.111 \"echo connected && ls /home/ubuntu/kaspi-saas/backend/api/\")",
+      "Bash(mkdir -p ~/.ssh)",
+      "Bash(ssh-keyscan 213.155.21.111)",
+      "Bash(~/.ssh/known_hosts)",
+      "Bash(SSH_ASKPASS_REQUIRE=never SSH_ASKPASS=\"\" ssh -o BatchMode=no -o PreferredAuthentications=password -o PubkeyAuthentication=no ubuntu@213.155.21.111 \"echo ok\")",
+      "Bash(python3 -c \"import paramiko; print\\(''ok''\\)\")",
+      "Bash(python -c \"import paramiko; print\\(''ok''\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python -c \":*)",
+      "Bash(pip --version)",
+      "Bash(/c/Users/Данди/AppData/Local/Programs/Python/Python313/python.exe -m pip install paramiko -q)",
+      "Bash(/c/Users/Данди/AppData/Local/Programs/Python/Python313/python.exe -c \"import paramiko; print\\(''ok''\\)\")"
+    ]
+  }
+}
